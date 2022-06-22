@@ -38,4 +38,3 @@ def write_result(current_ip_address):
         f_obj.write(json.dumps(dict_result, indent=4))
     return
 
-a = conect( "10.132.21.50","netconf", "Passw0rd",1)
