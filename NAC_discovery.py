@@ -17,8 +17,8 @@ from ciscoconfparse import CiscoConfParse
 
 from conection import ping_device,write_result,conect
 
-user = 'netconf'
-passw = 'Passw0rd'
+user = ''
+passw = ''
 
 int_dic= {}
 
@@ -353,9 +353,9 @@ def catch_device_info(current_ip_address,country,typ,siteID):
 
 def main():
 
-    siteID2 = 'Prueba'
+    siteID = 'Test'
 
-    folder = "output_data/" + siteID2 + date_time
+    folder = "output_data/" + siteID + date_time
 
     os.makedirs(folder)
 
@@ -363,7 +363,7 @@ def main():
 
 
     for a in ip_list:
-        catch_device_info(a,"Sweden","Switch - Access",siteID2)
+        catch_device_info(a,"Region","Switch - Access",siteID)
 
 
 main()
